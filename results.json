@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "name": "rename_stress",
+      "ingest_ms": 0.61,
+      "signals": [
+        {
+          "id": "q-rename-stress",
+          "query_ms": 0.18,
+          "top_match": "INC-001",
+          "similarity": 1.0,
+          "expected": [
+            "INC-001"
+          ],
+          "passed": true,
+          "context": null
+        }
+      ]
+    },
+    {
+      "name": "small_smoke",
+      "ingest_ms": 0.07,
+      "signals": [
+        {
+          "id": "q-smoke",
+          "query_ms": 0.09,
+          "top_match": "INC-S1",
+          "similarity": 1.0,
+          "expected": [
+            "INC-S1"
+          ],
+          "passed": true,
+          "context": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "fast_mode": true
+  }
+}
